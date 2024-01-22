@@ -11,7 +11,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- google font: manrope  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +27,122 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header></header>
-    <main></main>
+    <header>
+      <section id="banner">
+        <div class="container mx-auto p-6 lg:p-12">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/1.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/12.jpg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card lg:w-2/5 bg-base-100 bg-[#131318] lg:absolute lg:right-24 lg:-bottom-48"
+          >
+            <div class="card-body">
+              <h2 class="card-title text-white text-xl font-extrabold">
+                Meet all the heroes from the field
+              </h2>
+              <p class="text-[#ffffff99] text-xs leading-6">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="professional-hockeys-club">
+        <div
+          class="container mx-auto p-6 lg:p-12 text-center space-y-4 lg:space-y-8"
+        >
+          <h3 class="text-xl lg:text-4xl font-extrabold">
+            Professional Hockeys Club
+          </h3>
+          <p class="font-medium text-[#13131899] leading-6">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+          <div class="flex justify-around">
+            <div class="space-y-4">
+              <div
+                class="radial-progress text-[#ff4240]"
+                style="--value: 87"
+                role="progressbar"
+              >
+                <span class="text-[#131318] text-xl font-extrabold">87%</span>
+              </div>
+              <h4 class="text-xl text-[#131318] font-semibold">
+                Prayer Facility
+              </h4>
+              <p class="text-sm text-[#13131899] leading-6">
+                Amet consectetur. Condimentum dignissim adipiscing.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="radial-progress text-[#49d293]"
+                style="--value: 95"
+                role="progressbar"
+              >
+                <span class="text-[#131318] text-xl font-extrabold">95%</span>
+              </div>
+              <h4 class="text-xl text-[#131318] font-semibold">
+                Prayer Facility
+              </h4>
+              <p class="text-sm text-[#13131899] leading-6">
+                Amet consectetur. Condimentum dignissim adipiscing.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="radial-progress text-[#ffb546]"
+                style="--value: 90"
+                role="progressbar"
+              >
+                <span class="text-[#131318] text-xl font-extrabold">90%</span>
+              </div>
+              <h4 class="text-xl text-[#131318] font-semibold">
+                Prayer Facility
+              </h4>
+              <p class="text-sm text-[#13131899] leading-6">
+                Amet consectetur. Condimentum dignissim adipiscing.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="radial-progress text-[#4c8df1]"
+                style="--value: 80"
+                role="progressbar"
+              >
+                <span class="text-[#131318] text-xl font-extrabold">80%</span>
+              </div>
+              <h4 class="text-xl text-[#131318] font-semibold">
+                Prayer Facility
+              </h4>
+              <p class="text-sm text-[#13131899] leading-6">
+                Amet consectetur. Condimentum dignissim adipiscing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
