@@ -32,6 +32,62 @@
   </head>
   <body class="font-manrope">
     <header>
+      <section id="nav">
+        <div class="container mx-auto p-6 lg:p-12">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl text-[#131318] font-extrabold"
+                >Hockey<span class="text-[#FF4240]">’</span>s</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                <li class="text-[#424247] font-normal"><a>About</a></li>
+                <li class="text-[#424247] font-normal"><a>Pages</a></li>
+                <li class="text-[#424247] font-normal"><a>Blog</a></li>
+                <li class="text-[#424247] font-normal"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-4">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a class="btn btn-error bg-[#FF4240] text-[#fff]">Get Ticket</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="banner">
         <div class="container mx-auto p-6 lg:p-12">
           <div class="carousel w-full">
@@ -62,8 +118,8 @@
                 Meet all the heroes from the field
               </h2>
               <p class="text-[#ffffff99] text-xs leading-6">
-                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-                turpis placerat dolor. Purus urna in sit nullam proin.
+                Hockey's roots trace back centuries, with variations of the game
+                played in diverse cultures across the globe.
               </p>
             </div>
           </div>
@@ -157,41 +213,22 @@
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. Purus urna in sit nullam proin.
           </p>
-          <div
-            class="md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 lg:gap-6 md:gap-6 space-y-6 md:space-y-0 lg:space-y-0"
-          >
-            <div class="card w-auto lg:w-full bg-base-100 shadow-xl image-full">
-              <figure><img src="images/2.png" alt="Hokey" /></figure>
-              <div class="card-body text-start">
-                <h2 class="card-title text-2xl text-[#FFF] font-extrabold">
-                  Junior Program
-                </h2>
-                <p class="text-sm text-[#FFF] w-3/4">
-                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                  elit enim sagittis turpis in magna. Id et sed euismod natoque
-                  amet nunc morbi nulla. Tortor congue sed et in.
-                </p>
-                <div class="card-actions py-4">
-                  <button
-                    class="btn btn-error bg-[#FF4240] border-2 border-solid border-[#FF4240] px-6 py-3 text-[#FFF]"
-                  >
-                    Register Now!
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card w-auto lg:w-full bg-base-100 shadow-xl image-full">
-              <figure><img src="images/3.png" alt="Shoes" /></figure>
-              <div class="card-body text-start">
-                <h2 class="card-title text-2xl text-[#FFF] font-extrabold">
-                  Teenager Program
-                </h2>
-                <p class="text-sm text-[#FFF] w-3/4">
-                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                  elit enim sagittis turpis in magna. Id et sed euismod natoque
-                  amet nunc morbi nulla. Tortor congue sed et in.
-                </p>
-                <div class="card-actions">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/2.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-start">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-2xl text-[#FFF] font-extrabold">
+                    Junior Program
+                  </h1>
+                  <p class="mb-5 text-sm text-[#FFF] w-3/4">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    elit enim sagittis turpis in magna. Id et sed euismod
+                    natoque amet nunc morbi nulla. Tortor congue sed et in.
+                  </p>
                   <button
                     class="btn btn-error bg-[#FF4240] border-2 border-solid border-[#FF4240] px-6 py-3 text-[#FFF]"
                   >
@@ -201,19 +238,43 @@
               </div>
             </div>
             <div
-              class="card w-auto lg:w-full col-span-2 bg-base-100 shadow-xl image-full"
+              class="hero min-h-screen"
+              style="background-image: url(images/3.png)"
             >
-              <figure><img src="images/4.png" alt="Shoes" /></figure>
-              <div class="card-body text-start">
-                <h2 class="card-title text-2xl text-[#FFF] font-extrabold">
-                  Professional Program
-                </h2>
-                <p class="text-sm text-[#FFF] w-3/4">
-                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
-                  elit enim sagittis turpis in magna. Id et sed euismod natoque
-                  amet nunc morbi nulla. Tortor congue sed et in.
-                </p>
-                <div class="card-actions">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-start">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-2xl text-[#FFF] font-extrabold">
+                    Teenager Program
+                  </h1>
+                  <p class="mb-5 text-sm text-[#FFF] w-3/4">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    elit enim sagittis turpis in magna. Id et sed euismod
+                    natoque amet nunc morbi nulla. Tortor congue sed et in.
+                  </p>
+                  <button
+                    class="btn btn-error bg-[#FF4240] border-2 border-solid border-[#FF4240] px-6 py-3 text-[#FFF]"
+                  >
+                    Register Now!
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hero min-h-screen col-span-2"
+              style="background-image: url(images/4.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-neutral-content text-start">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-2xl text-[#FFF] font-extrabold">
+                    Professional Program
+                  </h1>
+                  <p class="mb-5 text-sm text-[#FFF] w-3/4">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    elit enim sagittis turpis in magna. Id et sed euismod
+                    natoque amet nunc morbi nulla. Tortor congue sed et in.
+                  </p>
                   <button
                     class="btn btn-error bg-[#FF4240] border-2 border-solid border-[#FF4240] px-6 py-3 text-[#FFF]"
                   >
@@ -500,6 +561,81 @@
                       <span>Delivery Fee : Free</span>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="clients-question">
+        <div
+          class="container mx-auto p-6 lg:p-12 text-center space-y-6 lg:space-y-8"
+        >
+          <h3 class="text-[#131318] text-4xl font-extrabold">
+            Clients Question
+          </h3>
+          <p class="text-[#13131899] font-medium leading-6">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+          <div class="flex gap-6">
+            <img src="images/11.png" alt="" />
+            <div class="flex gap-4 flex-col w-3/4">
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Our Equipment
+                </div>
+                <div class="collapse-content">
+                  <p class="text-[#13131899] font-medium leading-6">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    elit enim sagittis turpis in magna.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Hockey Training
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Private Lessons
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Ski Touring
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Booking
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-[#131318] text-xl font-bold">
+                  Pricings
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
                 </div>
               </div>
             </div>
